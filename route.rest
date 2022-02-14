@@ -1,0 +1,28 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/6207d931783f8fca438e73a0
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Isac Börjesson",
+    "subscribedToChannel": "Web Dev Simplified"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/6207d931783f8fca438e73a0
+
+###
+
+PATCH http://localhost:3000/subscribers/6207d931783f8fca438e73a0
+Content-Type: application/json
+
+{
+    "name": "Tilde"
+}
